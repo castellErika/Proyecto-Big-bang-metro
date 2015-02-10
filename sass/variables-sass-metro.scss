@@ -1,0 +1,55 @@
+// -- Grays
+
+$black: 				#000;
+$gray: 					#666;
+$grayLight: 			#999;
+$grayLighter: 			#EEE;
+$graySoftLighter: 		#FAFAFA;
+$white: 				#FFF;
+
+// -- Colors
+$orangeMetro: 			#FFA601;
+$grayMetro:				#333;
+$titulosPrincipales:    #FE850C;
+$primary:				#004B91;
+$warning:				#8a6d3b;
+$success:				#468847;
+$error:					#B94A48;
+$info:					#3A87AD;
+$link:      			#004B91;
+$linkHover:				#fe850c;
+
+// -- Typography
+$sansFontFamily: 		Arial,Helvetica,sans-serif;
+$headingsFontFamily: 	Tahoma, Geneva, sans-serif;
+// -- Sprite
+$spriteHeaderFooter: 	"../img/footer/hd_sprite_new.png";
+// -- Reset
+$valorNull: 			0px;
+// -- Bordes redondeados
+@mixin rounded($radio) {
+	border-radius: $radio;
+	-moz-border-radius: $radio;
+	-webkit-border-radius: $radio;
+}
+@mixin roundedLados($vert, $horz, $radioTop: 8px) {
+	border-#{$vert}-#{$horz}-radius: $radioTop;
+	-moz-border-radius-#{$vert}#{$horz}: $radioTop;
+	-webkit-border-#{$vert}-#{$horz}-radius: $radioTop;
+}
+// -- Transicion
+@mixin transition($property, $time, $function) {
+	-webkit-transition: $property $time $function;
+	-moz-transition:$property $time $function;
+	-ms-transition: $property $time $function;
+	-o-transition: $property $time $function;
+	transition: $property $time $function;
+}
+
+// -- Responsive
+$screen-lg-min: 1200px;
+$screen-md-max: 1199px;
+$screen-md-min: 992px;
+$screen-sm-max: 990px;
+$screen-sm-min: 769px;
+$screen-xs-min: 768px;

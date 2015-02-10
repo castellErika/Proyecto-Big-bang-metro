@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 3.1-Header Footer -Metrocuadrado</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="css/normalize.css">
+<!-- Metrocuadrado -->
+<link rel="stylesheet" media="all" href="css/bootstrap-theme-metro.css">
+<link rel="stylesheet" media="all" href="css/bootstrap-proyecto-metro.css">
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <!-- Inicia contenedor del contenido -->
+    <div class="container">
+      <div class="row">
+      	<div class="col-lg-9 col-md-9">
+            <ul class="breadcrumb">
+                <li><a href="#">Apartamento en venta</a></li>
+                <li><a href="#">Bogotá D.C</a></li>
+                <li><a href="#">Centro</a></li>
+                <li><a href="#">Chapinero Alto</a></li>
+                <li class="active">Apartamento</li>
+            </ul>
+            <div class="page-header mtr-sinfo-proyecto clearfix">
+                <h2>Apartamento, <span>Chapinero Alto, Bogotá</span></h2>
+                <small>Desde</small> <strong>$110'000.000</strong> <span class="mtr-descrip-principal">80m<sup>2</sup> 1 habitación y  2 baños</span>
+                <div class="pull-right mtr-botones-barra">
+                    <a href="#" class="btn btn-secondary">Preguntar por el proyecto</a>
+                    <a href="#" class="btn btn-secondary">Ver teléfono</a>
+                </div>
+            </div>
+        	<section class="mtr-media-proyecto">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#fotos" data-toggle="tab">Fotos</a></li>
+                    <li><a href="#video" data-toggle="tab">Video</a></li>
+                    <li><a href="#mapa" data-toggle="tab">Mapa de ubicación</a></li>
+                    <li><a href="#vista" data-toggle="tab">Vista de la calle</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="fotos">
+                        <div id="carousel-detalle-proyecto" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-detalle-proyecto" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-detalle-proyecto" data-slide-to="1"></li>
+                                <li data-target="#carousel-detalle-proyecto" data-slide-to="2"></li>
+                            </ol>
+                            
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="http://www.noviascolombia.com/bogota/haciendas/el_chalet/Finca_Bogota_6.jpg" alt="Hacienda El Chalet, Hacienda Bogota">
+                                </div>
+                                <div class="item">
+                                  <img src="http://www.totoyagourmet.com/_img/haciendas/01_totoya_gourmet_haciendas_max.jpg" alt="Totoya Gourmet">
+                                </div>
+                                <div class="item">
+                                  <img src="http://www.mexicondo.com/1-5-07_162-RESIZED.jpg" alt="Hacienda del sol">
+                                </div>
+                            </div>
+                            
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-detalle-proyecto" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-detalle-proyecto" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                    </div>
+                    <div class="tab-pane fade" id="mapa">
+                        <iframe width="760" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/?ie=UTF8&amp;ll=4.822786,-74.036007&amp;spn=0.049349,0.084543&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.es/?ie=UTF8&amp;ll=4.822786,-74.036007&amp;spn=0.049349,0.084543&amp;t=m&amp;z=14&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
+                        <div class="sitios-filtro-mapa">
+                            <div class="form-inline" role="form">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Transporte
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Colegios
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Hospitales
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Supermercados
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Restaurantes/bares
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Iglesias
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Gimnasios
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Parques
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="vista">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                    </div>
+                </div>
+            </section>
+        	<section class="mtr-info-proyecto clearfix">
+                <div class="col-lg-4 mtr-col-info">
+                    <div class="mtr-icon-info">
+                        <div class="icon-ribbon-info"></div>
+                    </div>
+                    <h3>Información general del proyecto</h3>
+                    <div class="mtr-conten-proyecto">
+                        <ul class="mtr-group-info">
+                            <li>
+                                <strong>Estrato:</strong> 5
+                            </li>
+                            <li class="mtr-utilities">
+                                Valor servicios públicos <em>$960.000*</em>
+                            </li>
+                            <li>
+                                <strong>Habitaciones:</strong> 4
+                            </li>
+                            <li>
+                                <strong>Baños:</strong> 2
+                            </li>
+                            <li>
+                                <strong>Área privada:</strong> 60m<sup>2</sup>
+                            </li>
+                            <li>
+                                <strong>Área construida:</strong> 120m<sup>2</sup>
+                            </li>
+                            <li>
+                                <strong>Estado:</strong> Sobre planos
+                            </li>
+                            <li>
+                                <strong>Fecha de entrega*:</strong> 12/10/2014
+                            </li>
+                        </ul>
+                        <em class="mtr-nota">*Fecha sujeta a cambios</em>
+                        <ul class="mtr-social-media">
+                            <li class="mtr-label-social">Compartir</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mtr-col-info mtr-col-info-black">
+                    <div class="mtr-icon-info">
+                        <div class="icon-ribbon-orange">
+                        <i class="glyphicon glyphicon-asterisk"></i></div>
+                    </div>
+                    <h3>Descripción del proyecto</h3>
+                    <div class="mtr-conten-proyecto">
+                        <p>Hermoso proyecto ubicado en el sector de belén rodeo alto con un entorno campestre. completas zonas comunes y una excelente vista a la ciudad, cerca a la clínica las américas, club el rodeo, aeropuerto olaya herrera, éxito de la 80 y centro comercial la mota. facilidades de acceso por la avenida 80, la carrera 70 y la avenida guayabal.</p>
+                    </div>
+                    <div class="mtr-cont-arrow">
+                        <i class="icon-arrow-white"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 mtr-col-info">
+                    <div class="mtr-icon-info">
+                        <div class="icon-ribbon-white">
+                        <i class="glyphicon glyphicon-ok"></i></div>
+                    </div>
+                    <h3>Servicios y amenities</h3>
+                    <div class="mtr-conten-proyecto">
+                        <ul class="mtr-service-proyecto">
+                            <li><span>Parque infantil</span></li>
+                            <li><span>Gimnasio</span></li>
+                            <li><span>Cancha de squash</span></li>
+                            <li><span>Rampas para discapacitados</span></li>
+                            <li><span>Piscina climatizada</span></li>
+                            <li><span>Amplias zonas verdes</span></li>
+                            <li><span>Cancha de tennis</span></li>
+                            <li><span>Cancha futbol sala</span></li>
+                            <li><span>Sauna</span></li>
+                            <li><span>Jacussi</span></li>
+                            <li><span>Bolera</span></li>
+                            <li><span>Asensor</span></li>
+                            <li><span>Tennis</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        	<section class="mtr-tipos-proyecto">
+            	<h2 class="mtr-title-project"><div class="mtr-circle-title"><i class="glyphicon glyphicon-th"></i></div> Tipos de apartamento de este proyecto</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Precio</th>
+                                <th>Área</th>
+                                <th>Precio m2</th>
+                                <th>Habitaciones</th>
+                                <th>Baños</th>
+                                <th>Garajes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                	<div class="mtr-cont-img-tipo">
+                                        <img src="borrar/tipo-apartamento.jpg">
+                                        <a href="#">Ver planos y fotos</a>
+                                    </div>
+                                </td>
+                                <td class="mtr-precio-apto">$110'000.000</td>
+                                <td>80m<sup>2</sup></td>
+                                <td>$4'000.000</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<div class="mtr-cont-img-tipo">
+                                        <img src="borrar/tipo-apartamento.jpg">
+                                        <a href="#">Ver planos y fotos</a>
+                                    </div>
+                                </td>
+                                <td class="mtr-precio-apto">$170'000.000</td>
+                                <td>110m<sup>2</sup></td>
+                                <td>$4'500.000</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                	<div class="mtr-cont-img-tipo">
+                                        <img src="borrar/tipo-apartamento.jpg">
+                                        <a href="#">Ver planos y fotos</a>
+                                    </div>
+                                </td>
+                                <td class="mtr-precio-apto">$230'000.000</td>
+                                <td>160m<sup>2</sup></td>
+                                <td>$5'100.000</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="" class="text-center">[+] Ver mas tipos de este proyecto</a>
+            </section>
+        	<section class="mtr-valorizacion-proyecto">
+            	<h2 class="mtr-title-project">
+                	<div class="mtr-circle-title"><i class="glyphicon glyphicon-arrow-up"></i></div>
+                    <span>
+                        Valorización en Chapinero Alto<br>
+                    	<em>Valor del m2 en Pesos colombianos</em>                	</span>
+    			</h2>
+                
+                <div class="mtr-estadis-valorizacion">
+                	<img src="borrar/valorizacion.jpg">
+                </div>
+			</section>            
+        	<section class="mtr-calificacion-proyecto clearfix">
+            	<h2 class="mtr-title-project"><div class="mtr-circle-title"><i class="glyphicon glyphicon-thumbs-up"></i></div> Calificaciones sobre Chapinero Alto</h2>
+                <div class="col-lg-5 mtr-calific-usuario">
+                    <div class="mtr-total-calificacion">
+                        <h5>Califique este Barrio:</h5>
+                        <ul class="mtr-star-calif">
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li class="mtr-qualification">Buena</li>
+                        </ul>
+                    </div>
+                    <div class="mtr-items-calificacion">
+                        <h6>Califique estas categorías:</h6>
+                        <ul>
+                            <li>
+                                <strong>Seguridad:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                </ul>
+                                <span class="mtr-qualification">Excelente</span>
+                            </li>
+                            <li>
+                                <strong>Tráfico:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                                <span class="mtr-qualification">Excelente</span>
+                            </li>
+                            <li>
+                                <strong>Transporte:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                                <span class="mtr-qualification">Excelente</span>
+                            </li>
+                            <li>
+                                <strong>Vías de acceso:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                                <span class="mtr-qualification">Excelente</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-offset-1 mtr-result-calific">
+                    <div class="mtr-total-calificacion">
+                        <h5>Calificaciones de los usuarios sobre esta zona:</h5>
+                        <ul class="mtr-star-calif">
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="mtr-qualification">Excelente</li>
+                        </ul>
+                    </div>
+                    <div class="mtr-items-calificacion">
+                        <ul>
+                            <li>
+                                <strong>Seguridad:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Tráfico:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Transporte:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Vías de acceso:</strong>
+                                <ul class="mtr-line-qualification">
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="mtr-total-qualification">Total calificaciones: <span>5,419</span>  /   Útimo voto: <span>hace 13 horas</span></div>
+                    </div>
+                </div>
+          	</section>
+        	<section class="mtr-agendar-visita">
+            	<h2 class="mtr-title-project"><div class="mtr-circle-title"><i class="glyphicon glyphicon-calendar"></i></div> Agendar visita</h2>
+                <form class="clearfix" role="form">
+                    <div class="form-group col-lg-3">
+                        <label class="sr-only">Escriba su nombre</label>
+                        <input type="email" class="form-control" placeholder="Escriba su nombre">
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label class="sr-only">753149</label>
+                        <input type="password" class="form-control" placeholder="753149">
+                        <p class="help-block">Por favor digite números solamente</p>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label class="sr-only">Escriba su email</label>
+                        <input type="password" class="form-control" placeholder="Escriba su email">
+                    </div>
+                    <div class="form-group col-lg-3">
+                    <button type="submit" class="btn btn-primary">Agendar visita</button>
+                    </div>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox"> Acepto <a href="#">términos y condiciones</a>
+                        </label>
+                    </div>
+                </form>
+            </section>
+        	<section class="mtr-visto-usuarios clearfix">
+            	<h2 class="mtr-title-project"><div class="mtr-circle-title"><i class="glyphicon glyphicon-eye-open"></i></div> Otros usuarios han visto los siguientes proyectos</h2>
+                <div class="mtr-list-vista col-lg-3">
+                    <div class="thumbnail">
+                            <img src="http://e.metrocuadrado.com.s3.amazonaws.com/inmuebles/442-M1264882/442-M1264882_2_l.jpg" alt="...">
+                        <div class="caption">
+                            <h6>Palo Alto I Etapa</h6>
+                            <p>Chicó Reservado, Bogotá</p>
+                            <b>Desde</b> <strong>$190`000.000</strong>
+                        </div>
+                    </div>
+           		</div>
+                <div class="mtr-list-vista col-lg-3">
+                    <div class="thumbnail">
+                            <img src="http://e.metrocuadrado.com.s3.amazonaws.com/inmuebles/442-M1264882/442-M1264882_2_l.jpg" alt="...">
+                        <div class="caption">
+                            <h6>Palo Alto I Etapa</h6>
+                            <p>Chicó Reservado, Bogotá</p>
+                            <b>Desde</b> <strong>$190`000.000</strong>
+                        </div>
+                    </div>
+           		</div>
+                <div class="mtr-list-vista col-lg-3">
+                    <div class="thumbnail">
+                            <img src="http://e.metrocuadrado.com.s3.amazonaws.com/inmuebles/442-M1264882/442-M1264882_2_l.jpg" alt="...">
+                        <div class="caption">
+                            <h6>Palo Alto I Etapa</h6>
+                            <p>Chicó Reservado, Bogotá</p>
+                            <b>Desde</b> <strong>$190`000.000</strong>
+                        </div>
+                    </div>
+           		</div>
+                <div class="mtr-list-vista col-lg-3">
+                    <div class="thumbnail">
+                            <img src="http://e.metrocuadrado.com.s3.amazonaws.com/inmuebles/442-M1264882/442-M1264882_2_l.jpg" alt="...">
+                        <div class="caption">
+                            <h6>Palo Alto I Etapa</h6>
+                            <p>Chicó Reservado, Bogotá</p>
+                            <b>Desde</b> <strong>$190`000.000</strong>
+                        </div>
+                    </div>
+           		</div>
+          	</section>
+        	<section class="mtr-zona-proyectos">
+            	<h2 class="mtr-title-project"><div class="mtr-circle-title"><i class="glyphicon glyphicon-pushpin"></i></div> Proyectos en esta zona</h2>
+                <div class="mtr-cont-mapa-zona">
+                
+                
+                </div>
+          	</section>
+        </div>
+      	<div class="col-lg-3 col-md-3">
+        	<div class="mtr-margin-left text-right">
+                <div class="mtr-cont-botones">
+                    <a href="#" class="btn btn-secondary"><i class="glyphicon glyphicon-star"></i> Agregar a favoritos</a>
+                    <a href="#" class="btn btn-secondary">Ver mis favoritos</a>
+                </div>
+                <div class="mtr-info-atencion">
+                    <h5>Condominio Residencial Remanso del Rodeo</h5>
+                    <p><strong>Sala de ventas:</strong> Calle 25G # 74B-80</p>
+                    <p><strong>Horario de atención:</strong> Lunes a viernes: 9:00 - 6:00pm</p>
+                    <div class="mtr-estado-proyecto pull-right">
+                    	<i class="glyphicon glyphicon-flag"></i>
+                        Proyecto en construcción
+                    </div>
+                    <div class="clear"></div>
+                    <span class="label label-default">Cód: 2613-M1294263</span>
+                </div>
+        	</div><!-- mtr-margin-left -->
+            <div class="well mtr-cont-form">
+            	<legend>Contacte a la constructora</legend>
+                <div class="mtr-inmobiliaria pull-left">
+                	<figure><img src="http://www.metrocuadrado.com/multiusuario/logoempresa.do?id=131500"></figure>
+                	<span>Inmobiliaria Ospina</span>
+                </div>
+                <a href="#" class="btn btn-info btn-xs pull-left">Ver teléfono</a>
+                <form class="clear">
+                    <div class="form-group">
+                        <input type="text" placeholder="Escriba su nombre" id="inputNombre" class="form-control">
+                    </div>                
+                    <div class="form-group has-error">
+                        <input type="text" placeholder="Escriba su teléfono" id="inputTelefono" class="form-control">
+                        <span class="help-block">Por favor digite números solamente</span>
+                    </div>                
+                    <div class="form-group">
+                        <input type="text" placeholder="Escriba su email" id="inputEmail" class="form-control">
+                    </div> 
+                    <div class="form-group">
+                        <textarea class="form-control" rows="2" placeholder="Sus comentarios"></textarea>
+                    </div> 
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> <a href="#">Acepto términos y condiciones</a>
+                        </label>
+                    </div>                       
+                </form>
+                <div class="text-center">
+                	<button type="submit" class="btn btn-primary">Contactar al constructor</button>
+                </div>
+            </div><!-- well -->
+            <div class="mtr-revista-metro">
+            	<a href="#">Vea este proyecto en la revista Metrocuadrado</a>
+            </div>
+            <div class="mtr-firmas-responsa">
+            	<h3>Firmas responsables</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td width="5%"></td>
+                            <td>
+                                <b>Arquitectos Sin Fronteras</b>
+                                <span>Diseño y acabados</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <b>Umbral</b>
+                                <span>Fiduciaria</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <b>Tri-states</b>
+                                <span>Prestamista</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- mtr-firmas-responsa -->
+            <div class="mtr-otros-proyectos">
+            	<h3>Otros proyectos de Constructora Ospina</h3>
+                <ul class="media-list">
+                    <li class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://www.metrocuadrado.com/microsites/constructores/empresas/recursosMicrosites/16167/img/archivoLogo.gif">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Apartameto en Chicó</h4>
+                            <small>Desde</small> <strong>$110'000.000</strong>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://www.metrocuadrado.com/microsites/constructores/empresas/recursosMicrosites/10547/img/archivoLogo.gif">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Casa en Pontevedra</h4>
+                            <small>Desde</small> <strong>$110'000.000</strong>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://www.metrocuadrado.com/microsites/constructores/empresas/recursosMicrosites/10649/img/archivoLogo.gif">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Casa en Pontevedra</h4>
+                            <small>Desde</small> <strong>$110'000.000</strong>
+                        </div>
+                    </li>
+                </ul>
+                <a href="">[+] Ver mas proyectos</a>
+        	</div><!-- mtr-otros-proyectos -->
+            <div class="well mtr-cont-form">
+            	<legend>Quiero que me llamen</legend>
+                <form class="">
+                    <div class="form-group">
+                        <input type="text" placeholder="Escriba su nombre" id="inputNombre" class="form-control">
+                    </div>                
+                    <div class="form-group has-error">
+                        <input type="text" placeholder="Escriba su teléfono" id="inputTelefono" class="form-control">
+                        <span class="help-block">Por favor digite números solamente</span>
+                    </div>                
+                    <div class="form-group">
+                        <input type="text" placeholder="Escriba su ciudad" id="inputEmail" class="form-control">
+                    </div> 
+                </form>
+                <div class="text-center">
+                	<button type="submit" class="btn btn-primary">Contáctar a asesor</button>
+                </div>
+            </div><!-- well -->
+            <div class="mtr-recomendacion-inmueble">
+            	<h3>Recomendaciones para comprar inmueble</h3>
+                <ul class="mtr-listado-recomendados">
+                	<li>
+                    	<figure><img src="http://www.noviascolombia.com/bogota/haciendas/el_chalet/Finca_Bogota_6.jpg"></figure>
+                        <a href="#">¿Qué dice la Ley de Propiedad Horizontal?</a>
+                    </li>
+                	<li>
+                    	<figure><img src="http://www.noviascolombia.com/bogota/haciendas/el_chalet/Finca_Bogota_6.jpg"></figure>
+                        <a href="#">Que los objetos delicados no sean un problema</a>
+                    </li>
+                </ul>
+            </div> <!-- mtr-recomendacion-inmueble -->
+            <div class="well mtr-cont-form mtr-calcular-credito">
+            	<legend>Calcular crédito y financiación</legend>
+                <form class="">
+                    <div class="form-group">
+                        <label class="control-label">Precio inmueble:</label>                    
+                        <select id="select" class="form-control">
+                            <option>$275'00'000.000</option>
+                        </select>
+                    </div>
+                    <div class="form-horizontal mtr-calculo-credito">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputEmail3">Cuota inicial</label>
+                            <div class="col-sm-8">
+                                <select id="select" class="form-control">
+                                    <option>$275'00'000.000</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputEmail3">Plazo</label>
+                            <div class="col-sm-8">
+                                <select id="select" class="form-control">
+                                    <option>36</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputEmail3">Sistema</label>
+                            <div class="col-sm-8">
+                                <select id="select" class="form-control">
+                                    <option>PESOS</option>
+                                </select>
+                            </div>
+                        </div> 
+                    </div>  
+                    <hr>
+                </form>
+                <div class="text-center">
+                    <div class="mtr-total-calculado"><em>Valor cuota mes:</em> <b>$1'436.637</b></div>            
+                	<button type="submit" class="btn btn-primary">Solicitar crédito</button>
+                </div>
+                <div class="mtr-tips-banco">
+                	<figure class="text-center"><img src="borrar/banco.jpg"></figure>
+                    <p>Sabía usted que puede financiar su inmueble con el banco AV Villas con la tasa de interés más baja del mercado y 
+reducir su pago mensual.</p>
+                </div>
+            </div><!-- well -->
+            <div class="mtr-otros-vistos">
+            	<h3 class="page-header">Otros proyectos que ha visto</h3>
+                <ul class="mtr-container-thumbnail clearfix">
+                    <li>
+                        <a href="#"><img width="63" height="63" alt="Test 2" src="http://themes.tielabs.com/jarida/wp-content/uploads/2012/07/7413497016_9434c1917a_b-70x70.jpg"></a>
+                    </li> 
+                    <li>
+                        <a href="#"><img width="63" height="63" alt="Test 3" src="http://themes.tielabs.com/jarida/wp-content/uploads/2012/07/4208773599_3bf77aa60d_b-70x70.jpg"></a>
+                    </li> 
+                    <li>
+                        <a href="#"><img width="63" height="63" alt="1945802905_691d175718_b" src="http://themes.tielabs.com/jarida/wp-content/uploads/2012/07/1945802905_691d175718_b-70x70.jpg"></a>
+                    </li> 
+                    <li>
+                        <a href="#"><img width="63" height="63" alt="OLYMPUS DIGITAL CAMERA" src="http://themes.tielabs.com/jarida/wp-content/uploads/2012/07/4756831209_cfe3227937_b-70x70.jpg"></a>
+                    </li> 
+                    <li>
+                        <a href="#"><img width="63" height="63" alt="5709944739_578bc434a7_b" src="http://themes.tielabs.com/jarida/wp-content/uploads/2012/07/5709944739_578bc434a7_b-70x70.jpg"></a>
+                    </li> 
+                    <li>
+                        <a href="#"><img width="63" height="63" alt="7543602860_c741e700c0_b" src="http://themes.tielabs.com/jarida/wp-content/uploads/2012/07/7543602860_c741e700c0_b-70x70.jpg"></a>
+                    </li> 
+                </ul>
+            </div><!-- well -->
+        </div>
+      
+      </div><!-- row -->
+    </div>
+    <!-- Finaliza contenido -->
+<!-- JAVASCRIPT --> 
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/biblioteca-activadores.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+</body>
+</html>

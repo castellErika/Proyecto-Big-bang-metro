@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 3.1-Header Footer -Metrocuadrado</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="css/normalize.css">
+<!-- Metrocuadrado -->
+<link rel="stylesheet" media="all" href="css/bootstrap-theme-metro.css">
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <!-- Inicia contenedor del header -->
+    <div class="container">
+      <div class="row">
+        <header id="hd_header" itemscope itemtype="http://schema.org/WPHeader">
+          <div id="hd_contLoginSocial" class="clearfix hidden-xs hidden-sm">
+            <div class="hd_apiSocial">
+            	<a href="http://www.facebook.com/metrocuadradocom" target="_blank" rel="nofollow" title="Facebook"><img class="icoFacebook" src="img/img_trans.gif" alt="Facebook" width="1" height="1" /></a>
+                <a href="https://twitter.com/metro_cuadrado" target="_blank" rel="nofollow" title="Twitter"><img class="icoTwitter" src="img/img_trans.gif" alt="Twitter" width="1" height="1" /></a>
+                <a href="https://plus.google.com/u/0/112174026277288480186" target="_blank" rel="nofollow" title="Google+"><img class="icoGooglePlus" src="img/img_trans.gif" alt="Google+" width="1" height="1" /></a>
+                <a href="http://www.youtube.com/user/METROCUADRADOcom" target="_blank" rel="nofollow" title="YouTube"><img class="icoYouTube" src="img/img_trans.gif" alt="YouTube" width="1" height="1" /></a>
+                <a href="http://pinterest.com/mtcuadra/" target="_blank" rel="nofollow" title="Pinterest"><img class="icoPinterest" src="img/img_trans.gif" alt="Pinterest" width="1" height="1" /></a>
+           	</div>
+            <div class="hd_writeUs"> <a href="http://www.metrocuadrado.com/contactom2/contactenos.html?keepThis=true&TB_iframe=true&height=560&width=354" class="thickbox hd_linkEscribanos">Escr&iacute;banos</a> </div>
+            <div class="hd_needHelp"> &iquest;Necesita ayuda? <strong><a href="tel:018000115252">01 8000 115 252</a></strong> </div>
+            <div class="hd_logIn">
+              <nav role="hd_login" class="hd_menuIngreso">
+                <ul class="hd_loginM2">
+                  <li class="hd_cntLinksUser hd_ingresar"> <a href="javascript:;" class="hd_linkIngreso" id="hd_linkLogin">Ingresar</a>
+                    <div id="hd_member">
+                      <form action="javascript:;" method="post">
+                            <div class="form-group">
+                                <label class="control-label" for="usuario">Usuario</label>
+                                <input type="text" size="20" placeholder="Ej. juanp@correo.com" class="hd_wd_texto_login form-control" name="PJR_PASSWORD" id="hd_lgnUser" />
+                            </div>                      
+                            <div class="form-group">
+                                <label class="control-label" for="clave">Clave</label>
+                                <a class="hd_claveIngreso" href="/servlet/co.com.m2.servlet.usuario.OlvidoSuClave">¿Olvid&oacute; su clave?</a>
+                                <input type="password" value="" size="20" class="hd_wd_texto_login form-control" name="PJR_PASSWORD" id="hd_lgnPass" />
+                            </div>
+                            <div class="form-group text-right">
+                                <input type="submit" class=" btn btn-primary btn-sm" value="Entrar"  />
+                            </div>
+                      </form>
+                      <div class="clearfix"></div>
+                      <b>&raquo; ¿A&uacute;n no est&aacute; registrado? <a href="/servlet/co.com.m2.servlet.usuario.MostrarRegistro">Reg&iacute;strese</a></b>
+                      <div class="hd_cntFacebook clearfix">
+                        <fb:login-button autologoutlink="true" perms="user_about_me,friends_about_me,user_photos,user_status,email"></fb:login-button>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hd_loggedUser" style="display:none;"> <a href="/servlet/co.com.m2.servlet.agentePersonal.MostrarMisInmueblesOfertaAvanzado?tipo=buscar&desdeHomeL=S&recargar=S" class="hd_linkDashboard" rel="nofollow">fabián dario mariano támara</a> <a href="#" class="hd_linkLogout" title="Cerrar sesión" rel="nofollow">Cerrar sesión</a> </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 hidden-xs hidden-sm" >
+            <div class="hd_nombUsuaLogueado" style="visibility:hidden;">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6 col-sm-4">
+            <h1 class="mtr-cont-logo"><a title="Casas, Apartamentos, oficinas en venta y arriendo en Colombia" href="http://www.metrocuadrado.com">Casas, Apartamentos, oficinas en venta y arriendo en Colombia</a></h1> 
+          </div>
+          <div class="col-lg-9 col-md-9 fastAvanzada hidden-xs hidden-sm">
+            <form class="hd_fastBox clearfix fastAvanzada" id="hmid_fastAv" action="javascript:;">
+                <div class="form-group">
+                    <select class="selectpicker col-lg-3 col-md-3" title="Ciudad" data-live-search="true">
+                        <optgroup label="Ciudades principales">
+                            <option>Barranquilla</option>
+                            <option>Bogotá</option>
+                            <option>Cali</option>
+                            <option>Cartagena</option>
+                            <option>Medellín</option>
+                        </optgroup>
+                        <optgroup label="Otras ciudades y municipios">
+                            <option>Bello</option>
+                            <option>Bucaramanga</option>
+                            <option>Buenaventura</option>
+                            <option>Cúcuta</option>
+                            <option>Ibagué</option>
+                            <option>Manizales</option>
+                            <option>Montería</option>
+                            <option>Neiva</option>
+                            <option>Pasto</option>
+                            <option>Pereira</option>
+                            <option>Santa Marta</option>
+                            <option>Soacha</option>
+                            <option>Soledad</option>
+                            <option>Valledupar</option>
+                            <option>Villavicencio</option>
+                        </optgroup>
+                    </select>
+                    <select class="selectpicker col-lg-3 col-md-3" title="Tipo de inmueble">
+                        <optgroup label="Vivenda">
+                            <option>Casas</option>
+                            <option>Apartamentos</option>
+                        </optgroup>
+                        <optgroup label="Comercial">
+                            <option>Bodega</option>
+                            <option>Consultorio</option>
+                            <option>Local</option>
+                            <option>Lote</option>
+                            <option>Finca</option>
+                            <option>Edificio de oficinas</option>
+                            <option>Edificio de apartamentos</option>
+                        </optgroup>
+                        <optgroup label="Turismo y descanso">
+                            <option>Casa</option>
+                            <option>Apartamento</option>
+                            <option>Fincas</option>
+                            <option>Cabaña</option>
+                            <option>Hotel</option>
+                        </optgroup>
+                    </select>
+                    <select class="selectpicker col-lg-3 col-md-3" title="Tipo negocio">
+                        <option>Arriendo</option>
+                        <option>Compra</option>
+                    </select>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>
+              <div class="hd_buscAvanzada clearfix">
+                <p><a href="javascript:;" class="showPalabra">Búsqueda por palabra</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-7 fastPalabra clearfix hidden-xs">
+            <form class="hd_fastBox clearfix" id="hmid_fastPa" action="javascript:;">
+                <div class="form-group">
+                    <div class="col-lg-9 col-md-9 col-sm-10 col-xs-9">
+                        <input type="text" autofocus class="form-control" placeholder="Casa en bogotá chapinero 2 habitaciones">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </div>            
+                <div class="hd_buscAvanzada clearfix hidden-xs hidden-sm">
+                    <p><a href="javascript:;" class="showAvanzada">Búsqueda avanzada</a></p>
+                </div>
+            </form>
+          </div>
+          <div class="clear"></div>
+          <!-- Barra de navegación -->
+            <nav class="navbar navbar-default" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mtr-metrocuadrado">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="btn btn-primary navbar-toggle buscador-movil" data-toggle="collapse" data-target=".mtr-buscador-phone">
+                            <i class="glyphicon glyphicon glyphicon-search"></i>
+                        </a>
+                    </div>
+                    <div class="mtr-buscador-phone collapse">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar inmueble">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary">Buscar</button>
+                            </span>
+                        </div>                        
+                    </div>
+                    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="mtr-metrocuadrado">
+                        <ul class="nav navbar-nav">
+                            <li class="visible-xs"><button class="btn btn-primary" type="button">Publique su inmueble</button></li>
+                            <li class="active"><a href="#"><i class="iconmenu inicio"></i> Inicio</a></li>
+                            <li class="dropdown visible-xs">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="iconmenu ingresar"></i> Ingresar</a></li>
+                                    <li><a href="#"><i class="iconmenu registrarse"></i> Registrarse</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Buscar <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="iconmenu inmobiliaria"></i> Buscar por inmobiliaria</a></li>
+                                    <li><a href="#"><i class="iconmenu mapa"></i> Buscar por mapa</a></li>
+                                    <li><a href="#"><i class="iconmenu inmu-nuevos"></i> Buscar inmuebles nuevos</a></li>
+                                    <li><a href="#"><i class="iconmenu constructores"></i> Buscar por constructores</a></li>
+                                    <li><a href="#"><i class="iconmenu daciones"></i> Buscar por daciones de pago</a></li>
+                                    <li><a href="#"><i class="iconmenu revista"></i> Inmuebles revista metrocuadrado</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="hd_secPublicar">Publicar</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle hd_secDecoracion" data-toggle="dropdown">Decoraci&oacute;n <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="iconmenu banos"></i> Baños</a></li>
+                                    <li><a href="#"><i class="iconmenu cocinas"></i> Cocinas</a></li>
+                                    <li><a href="#"><i class="iconmenu habitaciones"></i> Habitaciones</a></li>
+                                    <li><a href="#"><i class="iconmenu comedor"></i> Sala-comedor</a></li>
+                                    <li><a href="#"><i class="iconmenu especiales"></i> Especiales</a></li>
+                                    <li><a href="#"><i class="iconmenu famosos"></i> Casas de famosos</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle hd_secTurismo" data-toggle="dropdown">Turismo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="iconmenu turistica"></i> Guía turística</a></li>
+                                    <li><a href="#"><i class="iconmenu calendario"></i> Calendario de eventos</a></li>
+                                    <li><a href="#"><i class="iconmenu apartamentos"></i> Apartamentos</a></li>
+                                    <li><a href="#"><i class="iconmenu fincas"></i> Fincas y casas camestres</a></li>
+                                    <li><a href="#"><i class="iconmenu hoteles"></i> Hoteles</a></li>
+                                    <li><a href="#"><i class="iconmenu rvturismo"></i> Revista Turismo</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Calculadoras <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="iconmenu seguros"></i> Calculadora de seguros</a></li>
+                                    <li><a href="#"><i class="iconmenu credito"></i> Calculadora de crédito</a></li>
+                                    <li><a href="#"><i class="iconmenu valorizacion"></i> Calculadora de valorización</a></li>
+                                    <li><a href="#"><i class="iconmenu precios"></i> Precios m<sup>2</sup></a></li>
+                                    <li><a href="#"><i class="iconmenu leasing"></i> Calculadora de Leasing</a></li>
+                                    <li><a href="#"><i class="iconmenu hagamos-cuentas"></i>Hagamos cuentas</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle hd_secGuias" data-toggle="dropdown">Gu&iacute;as y noticias <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="iconmenu arriendo"></i> Guía de arriendo</a></li>
+                                    <li><a href="#"><i class="iconmenu prophorizontal"></i> Guía de propiedad horizontal</a></li>
+                                    <li><a href="#"><i class="iconmenu compra-venta"></i> Guía de compra y venta</a></li>
+                                    <li><a href="#"><i class="iconmenu revista"></i> Revista Habitar</a></li>
+                                    <li><a href="#"><i class="iconmenu revista"></i> Revista Metrocuadrado</a></li>
+                                    <li><a href="#"><i class="iconmenu noticias"></i> Noticias</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li><button class="btn btn-primary" type="button">Publique su inmueble</button></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+                <div class="separador-menu-cont"></div>                
+            </nav>
+        </header>
+      </div>
+    </div>
+    <!-- Inicia contenido -->
+    <!-- Start Footer -->
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+      <div class="container preFooter hidden-xs hidden-sm">
+        <div class="row">
+          <h2>Inmuebles en venta y arriendo en Colombia</h2>
+          <div class="col-lg-3 col-md-3">
+            <ul class="list-unstyled">
+              <h3>Bogot&aacute;</h3>
+              <li>&raquo; <a href="#">Apartamentos en arriendo</a></li>
+              <li>&raquo; <a href="#">Apartamentos en arriendo Bogotá</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Cedritos</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Chapinero</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Suba</a></li>
+              <li>&raquo; <a href="#">Arriendo apartamentos Bogotá</a></li>
+              <li>&raquo; <a href="#">Arriendos Bogotá</a></li>
+              <li>&raquo; <a href="#">Casas en arriendo en Bogotá</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul class="list-unstyled">
+              <h3>Bogot&aacute;</h3>
+              <li>&raquo; <a href="#">Casas en Bogotá</a></li>
+              <li>&raquo; <a href="#">Casas en remate</a></li>
+              <li>&raquo; <a href="#">Inmobiliarias Bogotá</a></li>
+              <li>&raquo; <a href="#">Locales en arriendo Bogotá</a></li>
+              <li>&raquo; <a href="#">Oficinas en Bogotá</a></li>
+              <li>&raquo; <a href="#">Proyectos de vivienda en Bogotá</a></li>
+              <li>&raquo; <a href="#">Venta casas Bogotá</a></li>
+              <li>&raquo; <a href="#">Venta de apartamentos en Bogotá</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul class="list-unstyled">
+              <h3>Cali / Medell&iacute;n</h3>
+              <li>&raquo; <a href="#">Apartamentos en Cali</a></li>
+              <li>&raquo; <a href="#">Arriendo en Cali</a></li>
+              <li>&raquo; <a href="#">Arriendo en Medellín</a></li>
+              <li>&raquo; <a href="#">Medellín apartamentos</a></li>
+              <li>&raquo; <a href="#">Oficinas en Cali</a></li>
+              <li>&raquo; <a href="#">Oficinas en Medellín</a></li>
+              <li>&raquo; <a href="#">Venta casa Cali</a></li>
+              <li>&raquo; <a href="#">Venta casa Medellín</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul class="list-unstyled">
+              <h3>Colombia</h3>
+              <li>&raquo; <a href="#">Apartamentos Barranquilla</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Bucaramanga</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Cartagena</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Santa Marta</a></li>
+              <li>&raquo; <a href="#">Apartamentos en Venta</a></li>
+              <li>&raquo; <a href="#">Casas en Arriendo</a></li>
+              <li>&raquo; <a href="#">Proyectos de vivienda</a></li>
+              <li>&raquo; <a href="#">Remates de casas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="subFooter clearfix">
+        <div class="container">
+          <div class="row">
+            <div itemscope itemtype="http://schema.org/LocalBusiness" class="col-lg-3 col-md-3 col-sm-4 moduloOrg text-right"> <a href="/" itemprop="url"><img src="img/footer/logom2-white.png" alt="Logo Metrocuadrado" width="124" height="34" border="0" itemprop="image" /></a>
+              <h5 itemprop="name">Oficinas Metrocuadrado</h5>
+              <p> Avenida Calle 26 No. 68B &#8211; 70<br>
+                Casa Editorial El Tiempo, Bogot&aacute;, Colombia<br>
+                <span class="hidden-xs"> <b>Tel&eacute;fonos servicio al cliente en Bogot&aacute;</b><br />
+                (571) 426 6000 opci&oacute;n 3, opci&oacute;n 2<br>
+                <b>Fuera de Bogot&aacute;:</b> 01 8000 110 990<br>
+                PBX: (571) 426 6550 - 294 0100<br />
+                FAX: (571) 294 0159 Opci&oacute;n: 7 Ext. 5919<br>
+                <b>Tel.</b> Cali: (57) 321 205 6075<br />
+                <b>Tel.</b> Medell&iacute;n: (574) 250 7988 Ext. 153<br>
+                <b>L&iacute;nea nacional:</b> 01 8000 115 252<br>
+                </span> <a href="mailto:contactenos@metrocuadrado.com">contactenos@metrocuadrado.com</a> </p>
+            </div>
+            <div class="col-lg-3 col-md-3 moduloNav hidden-xs hidden-sm">
+              <ul>
+                <li>&raquo; <a href="#">Inicio</a></li>
+                <li>&raquo; <a href="#">Buscar inmuebles</a></li>
+                <li>&raquo; <a href="#">Buscar por inmobiliaria</a></li>
+                <li>&raquo; <a href="#">Buscar por constructores</a></li>
+                <li>&raquo; <a href="#">Buscar por mapa</a></li>
+                <li>&raquo; <a href="#">Buscar inmuebles nuevos</a></li>
+                <li>&raquo; <a href="#">Inmuebles revista metrocuadrado</a></li>
+                <li>&raquo; <a href="#">Publicar inmuebles</a></li>
+                <li>&raquo; <a href="#">Decoraci&oacute;n</a></li>
+                <li>&raquo; <a href="#">Tur&iacute;smo</a></li>
+                <li>&raquo; <a href="#">Calculadoras</a></li>
+                <li>&raquo; <a href="#">Gu&iacute;as y noticias</a></li>
+                <li>&raquo; <a href="#">Quejas y reclamos</a></li>
+                <li>&raquo; <a href="#">Cont&aacute;ctenos</a></li>
+                <li>&raquo; <a href="#">Ayuda</a></li>
+                <li>&raquo; <a href="#">Mapa del sitio</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 moduloSocial">
+              <h6>Síguenos en:</h6>
+                <a title="Google+" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/112174026277288480186?rel=author">
+                    <img width="1" height="1" alt="Google+" src="img/img_trans.gif" class="icoGooglePlus">
+                </a>
+                <a title="Facebook" rel="nofollow" target="_blank" href="http://www.facebook.com/metrocuadradocom">
+                    <img width="1" height="1" alt="Facebook" src="img/img_trans.gif" class="icoFacebook">
+                </a>
+                <a title="Twitter" rel="nofollow" target="_blank" href="https://twitter.com/metro_cuadrado">
+                    <img width="1" height="1" alt="Twitter" src="img/img_trans.gif" class="icoTwitter">
+                </a>
+                <a title="YouTube" rel="nofollow" target="_blank" href="http://www.youtube.com/user/METROCUADRADOcom">
+                    <img width="1" height="1" alt="YouTube" src="img/img_trans.gif" class="icoYouTube">
+                </a>
+                <a title="Pinterest" rel="nofollow" target="_blank" href="http://pinterest.com/mtcuadra/">
+                    <img width="1" height="1" alt="Pinterest" src="img/img_trans.gif" class="icoPinterest">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-3 moduloFanBox hidden-xs hidden-sm">
+              <h6>B&uacute;scanos en Facebook:</h6>
+              <div class="fb-like-box" data-href="http://www.facebook.com/metrocuadradocom" data-width="292" data-height="290" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+            </div>
+            <div class="col-lg-12 col-md-12 moduloTransaccionales clearfix hidden-xs hidden-sm">
+              <h3>Nuestros portales especializados</h3>
+              <ul class="clearfix">
+                <li><a class="etcLogo" href="#" target="_blank" title="El Tiempo Clasificados" alt="El Tiempo Clasificados" ></a></li>
+                <li><a class="empleoLogo" href="#" target="_blank" title="Elempleo.com" alt="Elempleo.com" ></a></li>
+                <li><a class="metroLogo" href="#" target="_blank" title="Metrocuadrado.com" alt="Metrocuadrado.com" ></a></li>
+                <li><a class="carroyaLogo" href="#" target="_blank" title="Carroya.com" alt="Carroya.com" ></a></li>
+                <li><a class="qbcLogo" href="#" target="_blank" title="Quebuenacompra.com" alt="Quebuenacompra.com" ></a></li>
+                <li><a class="milesdearticulosLogo" href="#" target="_blank" title="Milesdearticulos.com" alt="Milesdearticulos.com" ></a></li>
+                <li><a class="guiaacademicaLogo" href="#" target="_blank" title="Guiaacademica.com" alt="Guiaacademica.com" ></a></li>
+              </ul>
+            </div>
+            <img class="ceetLogo col-lg-1 col-md-2 hidden-xs hidden-sm moduloCopyright" src="img/img_trans.gif" alt="Logo El Tiempo" width="1" height="1">
+            <div class="col-lg-2 col-md-3 hidden-xs hidden-sm nuestra-red moduloCopyright">
+                <a href="javascript:;" onClick="$('.moduloRedPortales').slideToggle();$(this).toggleClass('toggleTriangle');$('html, body').animate({scrollTop: '10000px'}, 500);return false;" class="linkPortales toggleTriangle ">Nuestra red de portales</a>
+            </div>
+            <div class="row col-lg-9 col-md-7 hidden-sm hidden-xs moduloCopyright">
+                <p class="col-lg-10 col-md-9 col-sm-8 copyright">Copyright &copy; <span id="gYearFooter"></span> Metrocuadrado. Usar este sitio implica que usted acepta nuestras <a href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350" class="thickbox">Pol&iacute;ticas y T&eacute;rminos</a> Prohibida su reproducci&oacute;n total o parcial, as&iacute; como su traducci&oacute;n a cualquier idioma sin autorizaci&oacute;n escrita de su titular.</p>
+                <a href="http://www.sic.gov.co/es/" class="sicLogo col-lg-2 col-md-3 col-xs-5 col-sm-2" target="_blank" rel="nofollow"></a>
+            </div>
+            <div class="col-sm-4 col-lg-12 col-md-12">
+                <div class="hidden-md hidden-lg portales-especializados">
+                    <a href="javascript:;" onClick="$('.portalesEspecializados').slideToggle();$(this).toggleClass('toggleTriangle');$('html, body').animate({scrollTop: '10000px'}, 500);return false;" class="linkPortales toggleTriangle ">Nuestra portales especializados</a>
+                    <div class="portalesEspecializados clearfix moduloColapsable">
+                        <ul>
+                        <li>&raquo; <a href="http://clasificados.eltiempo.com" target="_blank">El Tiempo Clasificados</a>  &raquo; clasificados.eltiempo.com</li>
+                        <li>&raquo; <a href="http://www.elempleo.com/colombia/trabajo/ofertas.aspx" target="_blank">El empleo</a> &raquo; elempleo.com</li>
+                        <li>&raquo; <a href="/" target="_blank">Metrocuadrado</a> &raquo; metrocuadrado.com</li>
+                        <li>&raquo; <a href="http://www.carroya.com/" target="_blank">Carroya</a> &raquo; carroya.com</li>
+                        <li>&raquo; <a href="http://www.quebuenacompra.com" target="_blank">Que buena compra</a> &raquo; quebuenacompra.co</li>
+                        <li>&raquo; <a href="http://www.milesdearticulos.com" target="_blank">Miles de artículos</a> &raquo; milesdearticulos.com</li>
+                        <li>&raquo; <a href="http://www.guiaacademica.com" target="_blank">Guiaacademica.com</a> &raquo; guiaacademica.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden-md hidden-lg nuestra-red moduloCopyright">
+                    <a href="javascript:;" onClick="$('.moduloRedPortales').slideToggle();$(this).toggleClass('toggleTriangle');$('html, body').animate({scrollTop: '10000px'}, 500);return false;" class="linkPortales toggleTriangle ">Nuestra red de portales</a>
+                </div>
+                <div class="moduloRedPortales clearfix moduloColapsable">
+                  <div class="col-lg-4 col-md-4 ">
+                    <ul>
+                      <li>&raquo; <a href="http://www.abcdelbebe.com/etapa/bebe" target="_blank">Beb&eacute;s y Ni&ntilde;os</a> &raquo; abcdelbebe.com</li>
+                      <li>&raquo; <a href="http://www.cambio.com.co" target="_blank">Pol&iacute;tica Actual en Colombia</a> &raquo; cambio.com.co</li>
+                      <li>&raquo; <a href="http://www.citytv.com.co/programa/metrocuadrado_tv" target="_blank">Videos de Casas</a> &raquo; citytv.com.co</li>
+                      <li>&raquo; <a href="http://www.clasificar.com/servlet/co.com.motor.servlet.home.MostrarHome" target="_blank">Motos y Carros Nuevos</a> &raquo; carroya.com</li>
+                      <li>&raquo; <a href="http://diarioadn.co/actualidad" target="_blank">Actualidad en Colombia</a> &raquo; diarioadn.co</li>
+                      <li>&raquo; <a href="http://www.e-hunters.com/" target="_blank">Selecci&oacute;n de Ejecutivos</a> &raquo; e-hunters.com</li>
+                      <li>&raquo; <a href="http://www.elempleo.com/colombia/Homes/HomeNotLoggedIn.aspx" target="_blank">Empleos Profesionales</a> &raquo; elempleo.com</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <ul>
+                      <li>&raquo; <a href="http://www.eltiempo.com/mundo/" target="_blank">Noticias del Mundo</a> &raquo; eltiempo.com</li>
+                      <li>&raquo; <a href="http://www.audienciadigital.com/" target="_blank">Tarifas Pauta Digital</a> &raquo; audienciadigital.com</li>
+                      <li>&raquo; <a href="http://www.quebuenacompra.com/" target="_blank">Descuentos en Spa</a> &raquo; quebuenacompra.com</li>
+                      <li>&raquo; <a href="http://www.canaleltiempo.tv/" target="_blank">Canal de Noticias ET</a> &raquo; canaleltiempo.tv</li>
+                      <li>&raquo; <a href="http://www.enter.co/temas/hardware/" target="_blank">&Uacute;ltimo en Hardware</a> &raquo; enter.com.co</li>
+                      <li>&raquo; <a href="http://www.futbolred.com/" target="_blank">F&uacute;tbol Profesional</a> &raquo; futbolred.com</li>
+                      <li>&raquo; <a href="http://www.guiaacademica.com/educacion/personas/pages/instituciones.aspx" target="_blank">Carreras Profesionales en Colombia</a> &raquo;  guiaacademica.com</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <ul>
+                      <li>&raquo; <a href="http://noticias.elempleo.com/colombia/tendencias_laborales" target="_blank">Tendencias Laborales</a> &raquo; elempleo.com</li>
+                      <li>&raquo; <a href="http://www.motor.com.co/" target="_blank">Carros Nuevos</a> &raquo; motor.com.co</li>
+                      <li>&raquo; <a href="http://www.portafolio.co/temas/infraestructura" target="_blank">Construcci&oacute;n en Colombia</a> &raquo; portafolio.co</li>
+                      <li>&raquo; <a href="http://www.revistadonjuan.com/" target="_blank">Contenido Premium</a> &raquo; revistadonjuan.com</li>
+                      <li>&raquo; <a href="http://www.alomujeres.com/" target="_blank">Tips de Moda y Estilo</a> &raquo; alomujeres.com</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="row col-sm-12 hidden-md hidden-lg moduloCopyright">
+                <p class="col-sm-8 copyright">Copyright &copy; <span id="gYearFooter"></span> Metrocuadrado. Usar este sitio implica que usted acepta nuestras <a href="/disclaimer/politicas.html?keepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=350" class="thickbox">Pol&iacute;ticas y T&eacute;rminos</a> Prohibida su reproducci&oacute;n total o parcial, as&iacute; como su traducci&oacute;n a cualquier idioma sin autorizaci&oacute;n escrita de su titular.</p>
+                <img class="ceetLogo col-xs-4 col-sm-2" src="img/img_trans.gif" alt="Logo El Tiempo" width="1" height="1">
+                <a href="http://www.sic.gov.co/es/" class="sicLogo col-xs-5 col-sm-2" target="_blank" rel="nofollow"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer --> 
+
+<!-- JAVASCRIPT --> 
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/biblioteca-activadores.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,724 @@
+/*
+ *	Estilos Metrocuadrado v3.0.0
+ *	Copyright 2014 Metrocuadrado
+*/
+
+@import "variables-sass-metro";
+// -- Sprite
+$spriteDetalleProyecto: 	"../img/spriteDetalleProyecto.png";
+figure, a, div{
+	img{
+		max-width:100%;
+	}
+}
+
+[class^="icon-"] {
+	background:{
+		repeat: no-repeat;
+		image: url($spriteDetalleProyecto);
+	}
+	display:inline-block;
+	vertical-align: middle;
+}
+figure{
+	margin:0;
+}
+section{
+	padding:20px 0;
+}
+ul{
+	list-style:none;
+	padding:0;
+}
+.mtr-title-project{
+	color:$grayMetro;
+	.mtr-circle-title{
+		background-color:$orangeMetro;
+		@include rounded(50%);
+		width:40px;
+		height:40px;
+		display:inline-block;
+		font-size:24px;
+		color:$white;
+		vertical-align:middle;
+		.glyphicon{
+			margin: 6px 9px;
+		}
+	}
+	span{
+		display:inline-block;
+	}
+	em{
+		color:$gray;
+		font:{ 
+			style:normal;
+			size:14px;
+		}
+	}
+}
+.mtr-sinfo-proyecto{
+	border:none;
+	margin-bottom:20px;
+	margin-top:10px;
+	&.affix{
+		top:0;
+		z-index:100;
+		width:1170px;
+		margin:0;
+		padding:0;
+		background:rgba(27,29,35,0.9);
+		border-bottom:4px solid #5F657A;
+		h2, span, small, strong,{
+			color:$white;
+		}
+		h2{
+			display:inline-block;
+			margin-left:35px;
+			margin-right:10px;
+			font-size:16px;
+			line-height:19px;
+			padding-right:10px;
+			border-right:{
+				width:1px;
+				color:#535965;
+				style:solid;
+			}
+		}
+		strong{
+			font-size: 18px;
+			line-height:21px;
+			padding-right:10px;
+			margin-right:15px;
+			border-right:{
+				width:1px;
+				color:#535965;
+				style:solid;
+			}
+		}
+		.mtr-descrip-principal{
+			font-size: 14px;
+			line-height:17px;
+		}
+		.mtr-botones-barra{
+			display:block;
+			margin:5px;
+		}
+	}
+	h2{
+		 font:{
+			family: $headingsFontFamily;
+			size: 24px;
+		 }
+		 color:$grayMetro; 
+		 span{
+		 	color:#777;
+		 }
+	}
+	small{
+		color:$gray;
+		display:inline-block;
+	}
+	strong{
+		color:#E56A0C;
+		display:inline-block;
+		font-size:32px;
+	}
+	.mtr-descrip-principal{
+		color:$grayMetro; 
+		font-size:18px;
+	}
+	.mtr-botones-barra{
+		display:none;
+	}
+}
+.mtr-media-proyecto{
+	padding-bottom:0;
+	.tab-content{
+		padding:10px 10px 0;
+		background-color:#F2F2F2;
+	}
+	.sitios-filtro-mapa{
+		padding:12px;
+		.checkbox{
+			width:24%;
+		}
+	}
+}
+.mtr-info-proyecto{
+	display:table;
+	position:relative;
+	background-color:#F6F6F6;
+	padding-bottom:0px;
+	padding-top:0px;
+	.mtr-col-info{
+		padding:20px;
+		float:none;
+		display:table-cell;
+		&.mtr-col-info-black{
+			background-color:#3B404D;
+			color:$white;
+			h3{
+				color:$white;
+			}
+			.mtr-cont-arrow{
+				position: absolute;
+				text-align: center;
+				bottom: 0px;
+				width: 245px;	
+				.icon-arrow-white{
+					height: 13px;
+					background-position:-8px -208px;
+					width: 47px;
+					vertical-align:bottom;				
+				}
+			}
+		}		
+		 h3{
+		 	text-align:center;
+			margin-top:50px;
+			margin-bottom:0;
+			padding-bottom:5px;
+			border-bottom:{
+				width:1px;
+				color:#DDDDDD;
+				style:solid;
+			}
+		 }
+		 .mtr-conten-proyecto{
+			border-top:{
+				width:1px;
+				color:$white;
+				style:solid;
+			}
+			padding-top:12px;
+		 }
+		 .mtr-icon-info{
+		 	position:absolute;
+			width:245px;
+			top:-10px;
+			text-align:center;
+			[class^="icon-"]{
+				width:65px;
+				height:60px;
+				text-align:left;
+				.glyphicon {
+					font-size: 27px;
+					margin: 19px 13px;
+				}
+			}
+			.icon-ribbon-info{
+				background-position:0 0px;
+			}
+			.icon-ribbon-white{
+				background-position:0 -132px;
+				color:$orangeMetro;
+			}
+			.icon-ribbon-orange{
+				background-position:0 -60px;
+				height:72px;
+			}
+		}
+		p{
+			text-align:center;
+		}
+		.mtr-nota{
+			display:block;
+			border-top:{
+				width:1px;
+				color:#ddd;
+				style:solid;
+			}
+			color:$gray;
+			font-size:11px;
+		}
+		.mtr-group-info{
+			.mtr-utilities{
+				padding-bottom:25px;
+				em{
+					color:#125D9F;
+					font-style: normal;
+				}
+			}
+		}
+		.mtr-social-media{
+			.mtr-label-social {
+				font-family:$headingsFontFamily;
+			}
+		}
+		.mtr-service-proyecto{
+			padding-left:20px;
+			li{
+				list-style: square inside none;
+				color:$orangeMetro;
+				span{
+					color:$grayMetro;
+				}
+			}
+		}
+	}
+}
+.mtr-tipos-proyecto{
+	a{
+		display:block;
+	}
+	.table-striped{
+		>thead {
+			>tr{
+				>th{
+					font-weight: normal;
+					text-align: center;
+					border-bottom:none;
+				}
+			}
+		}
+		>tbody{ 
+			>tr{ 
+				border-right:{
+					color:#DDDDDD;
+					width:3px;
+					style:solid;
+				}
+				border-top:{
+					color:$white;
+					width:10px;
+					style:solid;
+				}
+				border-bottom:{
+					color:$white;
+					width:10px;
+					style:solid;
+				}
+				>td{
+					text-align: center;
+					vertical-align:middle;
+					border-top:none;
+					background-color:#EEEEEE;
+					&.mtr-precio-apto{
+						color:#E56A0C;
+						font:{
+							size:16px;
+							weight: bold;
+						}
+					}
+					.mtr-cont-img-tipo{
+						background-color:$white;
+						img, a{
+							display:block;
+							margin:0 auto;
+							font-size:12px;
+						}
+					}
+				}
+			}
+			>tr:nth-child(2n+1){ 
+				border-right:{
+					color:#56C0E0;
+					width:3px;
+					style:solid;
+				}
+				>td{
+					background-color:#F4F8FA;
+				}
+			}
+		}
+	}
+}
+.mtr-valorizacion-proyecto{
+	.mtr-circle-title{
+		vertical-align:top;
+	}
+}
+.mtr-calificacion-proyecto{
+	padding-bottom:50px;
+	.mtr-qualification{
+		color:$gray;
+		font:{
+			style: italic;
+			size: 12px;
+		}
+	}
+	.mtr-total-calificacion{
+		margin-top:20px;
+		h5{
+			display:inline-block;
+			margin:0;
+			padding-right:15px;			
+			font:{
+				weight: bold;
+				size: 14px;
+			}
+		}
+		.mtr-star-calif{
+			padding-left:0px;
+			display:inline-block;
+			li{
+				display:inline-block;
+				vertical-align:middle;
+				a{
+					background:{
+						repeat: no-repeat;
+						image: url($spriteDetalleProyecto);
+						position:-20px -192px;
+					}
+					width:20px;
+					height:16px;
+					display:block;
+					&:hover{
+						background-position:0px -192px;
+					}
+				}
+				&.active{ 
+					a{
+						background-position:0px -192px;
+						&:hover{
+							background-position:-40px -192px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.mtr-items-calificacion{
+		>ul{
+			padding-left:0px;
+			>li{
+				margin:5px 0;
+				strong{
+					display:inline-block;
+					width:100px;
+					font:{
+						weight: normal;
+						size:12px;
+					}
+				}
+				.mtr-line-qualification{
+					display:inline-block;
+					padding:3px;
+					vertical-align:middle;
+					border:{
+						style:solid;
+						color:#DDDDDD;
+						width:1px;
+					}
+					li{
+						float:left;
+						margin:0 2px;
+						a{
+							background-color:#EEEEEE;
+							width:22px;
+							height:8px;
+							display:block;
+							&:hover{
+								background-color:#3B404D;
+							}
+						}
+						&.active{ 
+							a{
+								background-color:#3B404D;
+								&:hover{
+									background-color:#687188;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.mtr-result-calific{
+		.mtr-items-calificacion{
+			>ul{
+				>li{
+					.mtr-line-qualification{
+						border:none;
+						li{
+							a{
+								&:hover{
+									background-color:#3686AF;
+								}
+							}
+							&.active{ 
+								a{
+									background-color:#3686AF;
+									&:hover{
+										background-color:#7DB8D7;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.mtr-total-qualification{
+				font:{
+					style: italic;
+					size:12px;
+				}
+				span{
+					color:#CA8D00;
+				}
+			}
+		}
+	}
+}
+
+.mtr-agendar-visita{
+	background-color:#292C31;
+	@include rounded(5px);
+	padding:20px 15px;
+	h2{
+		margin:0px;
+		color:$white;
+		padding-bottom:15px;
+		border-bottom:{
+			width:1px;
+			style:solid;
+			color:#090A0B;
+		}
+	}
+	a{
+		color:$white;
+		text-decoration:underline;
+	}
+	form{
+		padding-top:20px;
+		border-top:{
+			width:1px;
+			style:solid;
+			color:#5D6570;
+		}
+	}
+	.form-group{
+		vertical-align: top;
+		margin-bottom:0px;
+		.help-block{
+			color:$orangeMetro;
+		}
+		.btn{
+			width:100%;
+		}
+	}
+	.checkbox{
+		clear:both;
+		margin:0px;
+		padding-right:10px;
+		label{
+			color:$white;
+			font-size:10px;
+		}
+	}
+}
+.mtr-visto-usuarios{
+	.mtr-list-vista{
+		padding:0px;
+		margin-top:20px;
+		.thumbnail{
+			@include rounded(0px);
+			position:relative;
+			overflow:hidden;
+			border:none;
+			padding:0 0 0 1px;
+			> img{
+				max-height:100%;
+				max-width: none;
+			}
+			.caption{
+				position:absolute;
+				background-color: rgba(0, 0, 0, 0.7);
+				left:0px;
+				bottom:0px;
+				width:100%;
+				padding:20px 10px;
+				color:$white;
+				h6{
+					margin:0;
+					font-weight: bold;
+					color:$white;
+				}
+				strong{
+					color:$orangeMetro;
+					font-size:20px;
+				}
+			}
+		}
+	}
+}
+.mtr-margin-left{
+	margin-left:-30px;
+	margin-bottom:5px;
+}
+.mtr-cont-botones{
+	.btn-secondary {
+		font:{
+			size: 12px;
+			weight: bold;
+		}
+	}
+}
+.mtr-info-atencion{
+	margin-top:34px;
+	h5{ 
+		margin:0;
+	}
+	p{
+		font-size:11px;
+		color:$gray;
+		display:block;
+		margin:0;
+		line-height:15px;
+	}
+	.mtr-estado-proyecto{
+		background:{
+			image:url("../img/ribbonProyecto.png");
+			repeat: no-repeat;
+		}
+		width:173px;
+		height:20px;
+		padding-left:7px;
+		color:$white;
+		font:{
+			size:11px;
+			weight: bold;
+		}
+		text-align:left;
+		margin:10px 0 50px;
+	}
+}
+.mtr-inmobiliaria{
+	width:130px;
+	margin-bottom:25px;
+	vertical-align:middle;
+	figure{
+		margin:0px;
+	}
+	span{
+		margin:5px 0;
+		display:inline-block;
+	}
+}
+.mtr-cont-form{
+	padding-bottom:25px;
+	.checkbox{
+		margin:15px 0;
+	}
+}
+.mtr-revista-metro{
+	background:{
+		image:url("../img/revistaMetro.png");
+		repeat: no-repeat;
+		position:190px 0;
+	}
+	padding:30px 90px 30px 15px;
+	margin:30px 0;
+}
+.mtr-firmas-responsa{
+	.table{
+		tbody{ 
+			>tr{ 
+				&:last-child{
+					td{
+						border-bottom:none;
+					}
+				}
+				>td{
+					border:{
+						width:1px;
+						style: solid ;
+						color: transparent #DDDDDD #DDDDDD transparent;
+					}
+					&:last-child{
+						border-right:none;
+					}
+				}
+			}
+		}
+		b{
+			font-weight: normal;
+			color:$orangeMetro;
+			display:block;
+		}
+		span{
+			color:$grayMetro;
+			font-size:12px;
+		}
+	}
+}
+.mtr-otros-proyectos{
+	margin:30px 0;
+	.media-list{
+		.media{
+			a{
+				width:84px;
+			}
+			.media-body{
+				.media-heading{
+					font:{
+						size:12px;
+						weight: bold;
+					}
+					line-height:15px;
+				}
+				strong{
+					color:$orangeMetro;
+				}
+			}
+		}
+	}
+}
+.mtr-recomendacion-inmueble{
+	margin:40px 0;
+	.mtr-listado-recomendados{
+		padding:0;
+		li{
+			margin-top:20px;
+			figure{
+				margin:0;
+				height:95px;
+				overflow:hidden;
+			}
+		}
+	}
+}
+.mtr-calcular-credito{
+	padding-bottom:0;
+	.mtr-calculo-credito{
+		.control-label{
+			font:{
+				style: italic;
+				weight: normal;		
+			}
+			text-align:left;
+		}
+	}
+	.mtr-total-calculado{
+		margin:15px;
+		b{
+			color:#E56A00;
+			font-size:18px;
+		}
+	}
+	.mtr-tips-banco{
+		padding:20px 25px;
+		margin:20px -15px 0;
+		background-color:#E5E4DB;
+		p{
+			margin:20px 0 0;
+			font-size:12px;
+			line-height:15px;
+		}
+	}
+}
+.mtr-container-thumbnail{
+	margin:0 21px;
+	li{
+		width:63px;
+		height:63px;
+		float:left;
+		margin:14px 7px;
+		a:hover{
+			img{
+				opacity:0.5;
+			}
+		}
+	}
+}
